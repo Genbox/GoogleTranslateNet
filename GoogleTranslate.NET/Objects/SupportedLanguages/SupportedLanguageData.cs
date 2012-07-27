@@ -4,6 +4,6 @@ namespace GoogleTranslateNET.Objects.SupportedLanguages
 {
     public class SupportedLanguageData
     {
-        public List<SupportedTranslationLanguage> Languages { get; set; }
+        public List<TranslationLanaguage> Languages { get; set; }
     }
 }

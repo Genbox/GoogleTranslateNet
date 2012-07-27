@@ -36,7 +36,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Device" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Language.cs" />
@@ -47,14 +46,15 @@
     <Compile Include="Objects\LanguageDetection\LanguageDetectionResult.cs" />
     <Compile Include="Objects\LanguageDetection\LanguageDetection.cs" />
     <Compile Include="Objects\SupportedLanguages\SupportedLanguageResult.cs" />
-    <Compile Include="Objects\SupportedLanguages\SupportedTranslationLanguage.cs" />
+    <Compile Include="Objects\SupportedLanguages\TranslationLanaguage.cs" />
     <Compile Include="Objects\SupportedLanguages\SupportedLanguageData.cs" />
     <Compile Include="Objects\Translation\TranslationData.cs" />
-    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Misc\ExtensionMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GoogleTranslate.cs" />
     <Compile Include="Objects\Translation\Translation.cs" />
     <Compile Include="Objects\Translation\TranslateResult.cs" />
+    <Compile Include="Misc\StringValueAttribute.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -75,7 +75,7 @@ namespace GoogleTranslateNET
         /// </summary>
         /// <param name="targetLanguage">When defined, gives you a list of languages that translates into the target language.</param>
         /// <returns>A list of supported languages</returns>
-        public List<SupportedTranslationLanguage> GetSupportedLanguages(Language targetLanguage = Language.Unknown)
+        public List<TranslationLanaguage> GetSupportedLanguages(Language targetLanguage = Language.Unknown)
         {
             //https://www.googleapis.com/language/translate/v2/languages?key=key&target=zh-TW
             RestRequest request = CreateRequest("languages");
@@ -121,7 +121,7 @@ namespace GoogleTranslateNET
             return detections;
         }
 
-        private void CheckRequest(string[] requestContent)
+        private void CheckRequest(IEnumerable<string> requestContent)
         {
             //Compute the total size of the content
             int sum = requestContent.Sum(item => item.Length);

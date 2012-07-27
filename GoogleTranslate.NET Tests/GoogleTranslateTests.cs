@@ -31,10 +31,10 @@ namespace GoogleTranslateNETTests
             List<Translation> results = google.Translate(Language.Automatic, Language.German, "Hello there", "What are you doing?");
 
             Assert.AreEqual("Hallo gibt es", results[0].TranslatedText);
-            Assert.AreEqual(Language.English.GetStringValue(), results[0].detectedSourceLanguage);
+            Assert.AreEqual(Language.English.GetStringValue(), results[0].DetectedSourceLanguage);
 
             Assert.AreEqual("Was machst du da?", results[1].TranslatedText);
-            Assert.AreEqual(Language.English.GetStringValue(), results[1].detectedSourceLanguage);
+            Assert.AreEqual(Language.English.GetStringValue(), results[1].DetectedSourceLanguage);
         }
 
         [TestMethod]
@@ -42,7 +42,7 @@ namespace GoogleTranslateNETTests
         {
             GoogleTranslate google = new GoogleTranslate(_key);
             google.PrettyPrint = false;
-            List<SupportedTranslationLanguage> results = google.GetSupportedLanguages();
+            List<TranslationLanaguage> results = google.GetSupportedLanguages();
 
             //We know that english and german is in the list. So they should be there
             Assert.IsTrue(results.Any(lang => lang.Language == Language.English.GetStringValue()));
@@ -60,13 +60,13 @@ namespace GoogleTranslateNETTests
             Assert.IsTrue(results.Count >= 1);
 
             //It should detect german
-            Assert.AreEqual(Language.German.GetStringValue(), results[0].language);
+            Assert.AreEqual(Language.German.GetStringValue(), results[0].Language);
 
             //It has to have a confidence of more than 0
-            Assert.IsTrue(results[0].confidence > 0.0f);
+            Assert.IsTrue(results[0].Confidence > 0.0f);
 
             //Too small of a text to be reliable
-            Assert.AreEqual(false, results[0].isReliable);
+            Assert.AreEqual(false, results[0].IsReliable);
         }
 
         [TestMethod]

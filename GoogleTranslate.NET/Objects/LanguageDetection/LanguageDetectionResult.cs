@@ -4,9 +4,4 @@ namespace GoogleTranslateNET.Objects.LanguageDetection
     {
         public LanguageDetectionData Data { get; set; }
     }
-
-    public class LanguageDetectionDataWrapper
-    {
-        public LanguageDetectionData Data { get; set; }
-    }
 }

@@ -111,6 +111,6 @@ namespace GoogleTranslateNET
         [StringValue("cy")]
         Welsh,
         [StringValue("yi")]
-        Yiddish,
+        Yiddish
     }
 }
