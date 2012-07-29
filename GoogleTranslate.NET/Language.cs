@@ -1,3 +1,5 @@
+using GoogleTranslateNET.Misc;
+
 namespace GoogleTranslateNET
 {
     public enum Language

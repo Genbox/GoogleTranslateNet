@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace GoogleTranslateNET
+namespace GoogleTranslateNET.Misc
 {
     public static class ExtensionMethods
     {

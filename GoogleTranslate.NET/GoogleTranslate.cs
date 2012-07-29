@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using GoogleTranslateNET.Misc;
 using GoogleTranslateNET.Objects.Error;
 using GoogleTranslateNET.Objects.LanguageDetection;
 using GoogleTranslateNET.Objects.SupportedLanguages;

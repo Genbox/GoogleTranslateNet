@@ -1,6 +1,6 @@
 using System;
 
-namespace GoogleTranslateNET
+namespace GoogleTranslateNET.Misc
 {
     /// <summary>
     /// This attribute is used to represent a string value
