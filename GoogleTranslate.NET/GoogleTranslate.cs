@@ -23,7 +23,6 @@ namespace GoogleTranslateNET
                 throw new ArgumentException("Key is required.", "key");
 
             _key = key;
-            _client.Proxy = null;
         }
 
         /// <summary>
