@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using GoogleTranslateNET;
+using GoogleTranslateNET.Misc;
 using GoogleTranslateNET.Objects.LanguageDetection;
 using GoogleTranslateNET.Objects.SupportedLanguages;
 using GoogleTranslateNET.Objects.Translation;
@@ -30,10 +31,10 @@ namespace GoogleTranslateNETTests
             google.PrettyPrint = false;
             List<Translation> results = google.Translate(Language.Automatic, Language.German, "Hello there", "What are you doing?");
 
-            Assert.AreEqual("Hallo gibt es", results[0].TranslatedText);
+            Assert.AreEqual("Hallo es", results[0].TranslatedText);
             Assert.AreEqual(Language.English.GetStringValue(), results[0].DetectedSourceLanguage);
 
-            Assert.AreEqual("Was machst du da?", results[1].TranslatedText);
+            Assert.AreEqual("Was machst du?", results[1].TranslatedText);
             Assert.AreEqual(Language.English.GetStringValue(), results[1].DetectedSourceLanguage);
         }
 
