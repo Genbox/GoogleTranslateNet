@@ -10,7 +10,7 @@ namespace GoogleTranslateNET.Tests
 {
     public class GoogleTranslateTests
     {
-        private readonly string _key = "AIzaSyD2C0Njof-3mA_rNdjSD0k6nwD9_tJ6gfc";
+        private readonly string _key = "YOUR API KEY";
 
         [Fact]
         public void GoogleTranslateConstructorTest()
