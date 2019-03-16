@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using GoogleTranslateNET;
 using GoogleTranslateNET.Objects.Translation;
 
-namespace GoogleTranslateNETClient
+namespace GoogleTranslateNET.Client
 {
     public class Program
     {
         //Insert your key in App.config
-        private static string _key = ConfigurationManager.AppSettings["Key"];
+        private static readonly string _key = "YOUR API KEY";
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             GoogleTranslate google = new GoogleTranslate(_key);
 

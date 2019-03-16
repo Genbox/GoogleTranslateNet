@@ -11,14 +11,7 @@
 ### Tutorial
 
 First you need to get a Google Translate API key from their website.
-Alternatively, there is a Getting Started guide here: https://developers.google.com/translate/v2/getting_started
-
-1. Go to https://code.google.com/apis/console/?api=translate&promo=tr and login with your Google account
-2. Click 'Services' and toggle 'Translate API' to 'ON'.
-3. It is a paid API, but the first 1 million characters are free. In the Google Console, click "Billing".
-4. Click the 'Google Checkout' button and enter your payment details. (This is needed in order to get the 1M free characters)
-5. Return to the Google Console and click 'API Access'
-6. Generate a Browser or Server key depending on where you plan to use the API.
+There is a Getting Started guide here: https://developers.google.com/translate/v2/getting_started
 
 ### Examples
 

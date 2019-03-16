@@ -9,6 +9,7 @@ using GoogleTranslateNET.Objects.Translation;
 using RestSharp;
 using RestSharp.Deserializers;
 using System.Linq;
+using RestSharp.Serialization.Json;
 
 namespace GoogleTranslateNET
 {
