@@ -1,5 +1,7 @@
 # GoogleTranslate.Net - A full implementation of the Google Translate 2.0 API
 
+[![NuGet](https://img.shields.io/nuget/v/GoogleTranslateNet.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/GoogleTranslateNet/)
+
 ### Features
 
 * Based on RestSharp (http://restsharp.org) to deserialize the Google API JSON into objects

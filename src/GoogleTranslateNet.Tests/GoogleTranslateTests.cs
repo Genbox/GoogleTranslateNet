@@ -10,12 +10,12 @@ namespace GoogleTranslateNet.Tests
 {
     public class GoogleTranslateTests
     {
-        private readonly string _key = "YOUR API KEY";
+        private const string _apiKey = "YOUR API KEY HERE";
 
         [Fact]
         public void GoogleTranslateConstructorTest()
         {
-            GoogleTranslate google = new GoogleTranslate(_key);
+            GoogleTranslate google = new GoogleTranslate(_apiKey);
             Assert.False(google.PrettyPrint.HasValue);
             Assert.False(google.LargeQuery.HasValue);
         }
@@ -23,7 +23,7 @@ namespace GoogleTranslateNet.Tests
         [Fact]
         public void TranslateTest()
         {
-            GoogleTranslate google = new GoogleTranslate(_key);
+            GoogleTranslate google = new GoogleTranslate(_apiKey);
             google.PrettyPrint = false;
             List<Translation> results = google.Translate(Language.Automatic, Language.German, "Hello there", "What are you doing?");
 
@@ -37,7 +37,7 @@ namespace GoogleTranslateNet.Tests
         [Fact]
         public void SupportedLanaugesTest()
         {
-            GoogleTranslate google = new GoogleTranslate(_key);
+            GoogleTranslate google = new GoogleTranslate(_apiKey);
             google.PrettyPrint = false;
             List<TranslationLanaguage> results = google.GetSupportedLanguages();
 
@@ -49,7 +49,7 @@ namespace GoogleTranslateNet.Tests
         [Fact]
         public void DetectLanguagesTest()
         {
-            GoogleTranslate google = new GoogleTranslate(_key);
+            GoogleTranslate google = new GoogleTranslate(_apiKey);
             google.PrettyPrint = false;
             List<LanguageDetection> results = google.DetectLanguage("Hallo gibt es");
 
@@ -69,7 +69,7 @@ namespace GoogleTranslateNet.Tests
         [Fact]
         public void TranslateLargeText()
         {
-            GoogleTranslate google = new GoogleTranslate(_key);
+            GoogleTranslate google = new GoogleTranslate(_apiKey);
             google.PrettyPrint = false;
 
             //2037 characters long text

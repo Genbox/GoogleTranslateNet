@@ -6,8 +6,7 @@ namespace GoogleTranslateNet.Examples
 {
     public class Program
     {
-        //Insert your key in App.config
-        private static readonly string _key = "YOUR API KEY";
+        private const string _key = "YOUR API KEY HERE";
 
         private static void Main(string[] args)
         {
@@ -20,8 +19,6 @@ namespace GoogleTranslateNet.Examples
             {
                 Console.WriteLine("Detected language: " + translation.DetectedSourceLanguage + " translation: " + translation.TranslatedText);
             }
-
-            Console.ReadLine();
         }
     }
 }
