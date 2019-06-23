@@ -31,4 +31,4 @@ static void Main(string[] args)
 }
 ```
 
-For more examples, take a look at the GoogleTranslate.NET Client and GoogleTranslate.NET Tests projects.
+For more examples, take a look at the GoogleTranslate.Examples and GoogleTranslate.Tests projects.
